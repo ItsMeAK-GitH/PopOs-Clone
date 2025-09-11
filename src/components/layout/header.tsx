@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { System76Logo } from '@/components/icons/system76-logo';
+import Image from 'next/image';
 
 const topNavLinks = [
   { href: '#', label: 'search' },
@@ -42,7 +42,13 @@ export function Header() {
         </div>
         <div className="flex flex-col items-center justify-center py-6">
           <Link href="https://system76.com/" className="flex flex-col items-center gap-2" aria-label="System76 Homepage">
-            <System76Logo className="h-10 w-auto text-foreground" />
+            <Image
+              src="/system76.svg"
+              alt="System76 Logo"
+              width={240}
+              height={54}
+              className="h-10 w-auto"
+            />
             <p className="text-sm tracking-wide">Powerful Linux Computers</p>
           </Link>
         </div>
