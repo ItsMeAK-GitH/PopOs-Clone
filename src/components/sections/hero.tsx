@@ -31,12 +31,13 @@ export function HeroSection() {
             </Button>
           </div>
         </div>
-        <div className="relative h-96 md:h-[500px]">
+        <div className="relative h-96 md:h-auto">
           <Image
             src="/pop-hero-xl-night.jpg"
             alt="Rocket ship"
-            fill
-            className="object-cover"
+            width={600}
+            height={600}
+            className="object-contain"
             data-ai-hint="rocket ship"
           />
         </div>
