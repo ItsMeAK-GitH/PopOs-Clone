@@ -10,12 +10,12 @@ export function MeetPopOsSection() {
   const videoId = "SrWw2LeZ21U";
 
   return (
-    <section className="py-20 bg-background">
-      <div className="container mx-auto px-4 text-center">
+    <section className="py-20 bg-background px-4">
+      <div className="mx-auto text-center">
         <h2 className="font-headline text-3xl font-bold text-foreground tracking-widest">
           MEET POP!_OS
         </h2>
-        <div className="mt-8 max-w-5xl mx-auto">
+        <div className="mt-8">
           <Dialog open={isOpen} onOpenChange={setIsOpen}>
             <DialogTrigger asChild>
               <div className="relative group cursor-pointer aspect-video">
