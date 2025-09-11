@@ -6,7 +6,7 @@ export function HeroSection() {
     <section className="relative overflow-hidden">
       <div className="absolute inset-0 -z-10">
         <Image
-          src="https://cdn11.bigcommerce.com/s-pywjnxrcr2/images/stencil/original/image-manager/pop-hero-xl-night.jpg?t=1739308230"
+          src="/pop-hero-xl-night.jpg"
           alt="Pop!_OS background"
           fill
           className="object-cover"
