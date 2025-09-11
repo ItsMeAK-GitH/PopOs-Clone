@@ -1,5 +1,6 @@
 import { Header } from '@/components/layout/header';
 import { HeroSection } from '@/components/sections/hero';
+import { EvolvingSection } from '@/components/sections/evolving';
 
 export default function Home() {
   return (
@@ -7,6 +8,7 @@ export default function Home() {
       <Header />
       <main>
         <HeroSection />
+        <EvolvingSection />
       </main>
     </div>
   );
