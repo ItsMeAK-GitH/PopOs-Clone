@@ -33,7 +33,7 @@ export function HeroSection() {
         </div>
         <div className="relative h-64 md:h-full min-h-[300px]">
           <Image
-            src="https://cdn11.bigcommerce.com/s-pywjnxrcr2/images/stencil/original/image-manager/pop-os-rocket-large.png"
+            src="/pop-hero-xl-night.jpg"
             alt="Rocket ship"
             fill
             className="object-contain"
