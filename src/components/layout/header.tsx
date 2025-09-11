@@ -42,11 +42,10 @@ export function Header() {
         <div className="flex flex-col items-center justify-center py-6">
           <Link href="https://system76.com/" className="flex flex-col items-center gap-2" aria-label="System76 Homepage">
             <img
-              src="/system76.webp"
+              src="/system76-logo-open-source-tagliner4_1730474034__00841.webp"
               alt="System76 Logo"
               className="h-10 w-auto"
             />
-            <p className="text-sm tracking-wide">Powerful Linux Computers</p>
           </Link>
         </div>
         <nav className="flex items-center justify-center gap-6 text-sm pb-4">
