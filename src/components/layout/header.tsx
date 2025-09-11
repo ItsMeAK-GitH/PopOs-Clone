@@ -43,7 +43,7 @@ export function Header() {
         <div className="flex flex-col items-center justify-center py-6">
           <Link href="https://system76.com/" className="flex flex-col items-center gap-2" aria-label="System76 Homepage">
             <Image
-              src="/system76.svg"
+              src="/system76.webp"
               alt="System76 Logo"
               width={240}
               height={54}
