@@ -2,7 +2,6 @@
 
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 
 const topNavLinks = [
   { href: '#', label: 'search' },
@@ -14,7 +13,7 @@ const topNavLinks = [
 
 const mainNavLinks = [
   { href: '#', label: 'laptops' },
-  { href: '#', label: 'desktops' },
+  { href: '#', 'label': 'desktops' },
   { href: '#', label: 'workstations' },
   { href: '#', label: 'mini' },
   { href: '#', label: 'servers' },
@@ -42,11 +41,9 @@ export function Header() {
         </div>
         <div className="flex flex-col items-center justify-center py-6">
           <Link href="https://system76.com/" className="flex flex-col items-center gap-2" aria-label="System76 Homepage">
-            <Image
+            <img
               src="/system76.webp"
               alt="System76 Logo"
-              width={240}
-              height={54}
               className="h-10 w-auto"
             />
             <p className="text-sm tracking-wide">Powerful Linux Computers</p>
