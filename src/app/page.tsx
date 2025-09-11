@@ -1,6 +1,7 @@
 import { Header } from '@/components/layout/header';
 import { HeroSection } from '@/components/sections/hero';
 import { EvolvingSection } from '@/components/sections/evolving';
+import { MeetPopOsSection } from '@/components/sections/meet-pop-os';
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <main>
         <HeroSection />
         <EvolvingSection />
+        <MeetPopOsSection />
       </main>
     </div>
   );
