@@ -10,7 +10,16 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        body: ['Fira Sans', 'sans-serif'],
+        body: [
+          'Fira Sans',
+          'system-ui',
+          '-apple-system',
+          'Segoe UI',
+          'Roboto',
+          'Ubuntu',
+          'Cantarell',
+          'sans-serif',
+        ],
         headline: ['Roboto Slab', 'serif'],
         code: ['monospace'],
       },
