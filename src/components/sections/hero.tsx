@@ -33,7 +33,7 @@ export function HeroSection() {
         </div>
         <div className="relative h-96">
           <Image
-            src="https://picsum.photos/seed/rocket/600/600"
+            src="/pop-hero-xl-night.jpg"
             alt="Rocket ship"
             fill
             className="object-contain"
