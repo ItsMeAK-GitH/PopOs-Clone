@@ -1,35 +1,45 @@
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import { Download, Heart } from 'lucide-react';
 
 export function HeroSection() {
   return (
-    <section className="relative flex flex-col items-center justify-center px-4 pt-32 pb-20 text-center md:pt-48 md:pb-32 min-h-[calc(100vh-5rem)]">
-      <Image
-        src="https://cdn11.bigcommerce.com/s-pywjnxrcr2/images/stencil/original/image-manager/pop-hero-xl-night.jpg?t=1739308230"
-        alt="Starry night sky over a mountain range, representing Pop!_OS."
-        fill
-        className="object-cover -z-10"
-        priority
-        data-ai-hint="space stars"
-      />
-      <div className="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-transparent -z-10" />
-
-      <h1 className="font-headline text-5xl font-bold tracking-tight md:text-7xl">
-        Welcome to Pop!_OS
-      </h1>
-      <p className="mt-6 max-w-2xl text-lg text-foreground/80 md:text-xl">
-        Pop!_OS is a free and open-source operating system for STEM and creative professionals. It's easy to use, and helps you unleash your potential.
-      </p>
-      <div className="mt-10 flex flex-wrap justify-center gap-4">
-        <Button size="lg" className="text-lg px-8 py-6 font-semibold">
-          <Download className="mr-2 h-5 w-5" />
-          Download
-        </Button>
-        <Button size="lg" variant="outline" className="text-lg px-8 py-6 font-semibold border-2 bg-transparent border-foreground text-foreground hover:bg-foreground hover:text-background">
-          <Heart className="mr-2 h-5 w-5" />
-          Donate to Pop
-        </Button>
+    <section className="relative overflow-hidden">
+      <div className="absolute inset-0 -z-10">
+        <Image
+          src="https://cdn11.bigcommerce.com/s-pywjnxrcr2/images/stencil/original/image-manager/pop-hero-xl-night.jpg?t=1739308230"
+          alt="Pop!_OS background"
+          fill
+          className="object-cover"
+          data-ai-hint="space stars"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
+      </div>
+      <div className="container mx-auto px-4 pt-16 pb-24 grid md:grid-cols-2 gap-8 items-center">
+        <div className="text-center md:text-left">
+          <h1 className="font-headline text-5xl font-bold text-white md:text-6xl lg:text-7xl">
+            Welcome to Pop!_OS
+          </h1>
+          <p className="mt-4 max-w-lg mx-auto md:mx-0 text-lg text-white/90">
+            Unleash your potential on Pop!_OS: an operating system for STEM and creative professionals.
+          </p>
+          <div className="mt-8 flex justify-center md:justify-start gap-4">
+            <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-3 rounded-sm">
+              DOWNLOAD
+            </Button>
+            <Button size="lg" variant="secondary" className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold px-8 py-3 rounded-sm">
+              DONATE TO POP
+            </Button>
+          </div>
+        </div>
+        <div className="relative h-64 md:h-full min-h-[300px]">
+          <Image
+            src="https://cdn11.bigcommerce.com/s-pywjnxrcr2/images/stencil/original/image-manager/pop-os-rocket-large.png"
+            alt="Rocket ship"
+            fill
+            className="object-contain"
+            data-ai-hint="rocket ship"
+          />
+        </div>
       </div>
     </section>
   );

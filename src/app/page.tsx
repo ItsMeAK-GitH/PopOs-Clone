@@ -7,7 +7,6 @@ export default function Home() {
       <Header />
       <main>
         <HeroSection />
-        {/* Future sections will be added here */}
       </main>
     </div>
   );

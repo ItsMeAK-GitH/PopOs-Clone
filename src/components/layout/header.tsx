@@ -1,103 +1,62 @@
 "use client";
 
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Link from 'next/link';
-import { Menu, Search, ShoppingCart, X } from 'lucide-react';
-import { Button } from '@/components/ui/button';
 import { System76Logo } from '@/components/icons/system76-logo';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { cn } from '@/lib/utils';
 
-const navLinks = [
-  { href: '#', label: 'LAPTOPS' },
-  { href: '#', label: 'DESKTOPS' },
-  { href: '#', label: 'MORE' },
+const topNavLinks = [
+  { href: '#', label: 'search' },
+  { href: '#', label: 'contact' },
+  { href: '#', label: 'log in' },
+  { href: '#', label: 'register' },
+  { href: '#', label: 'cart' },
+];
+
+const mainNavLinks = [
+  { href: '#', label: 'laptops' },
+  { href: '#', label: 'desktops' },
+  { href: '#', label: 'workstations' },
+  { href: '#', label: 'mini' },
+  { href: '#', label: 'servers' },
+  { href: '#', label: 'keyboards' },
+  { href: '#', label: 'components' },
+  { href: '#', label: 'pop!_os' },
+  { href: '#', label: 'merch' },
+  { href: '#', label: 'specials' },
 ];
 
 export function Header() {
-  const [scrolled, setScrolled] = useState(false);
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 10);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   return (
-    <header
-      className={cn(
-        'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
-        scrolled ? 'bg-background/80 backdrop-blur-sm border-b border-border' : 'bg-transparent'
-      )}
-    >
+    <header className="bg-background text-foreground/80 border-b border-border/50">
       <div className="container mx-auto px-4">
-        <div className="flex h-20 items-center justify-between">
-          <Link href="https://system76.com/" className="flex items-center gap-2" aria-label="System76 Homepage">
-            <System76Logo className="h-8 w-auto text-foreground" />
-          </Link>
-
-          <nav className="hidden md:flex items-center gap-8">
-            {navLinks.map((link) => (
-              <Link
-                key={link.label}
-                href={link.href}
-                className="text-sm font-medium uppercase tracking-wider text-foreground/80 transition-colors hover:text-foreground"
-              >
-                {link.label}
-              </Link>
-            ))}
-          </nav>
-
-          <div className="flex items-center gap-2 sm:gap-4">
-            <div className="hidden lg:flex items-center gap-6">
-                <Link href="#" className="text-sm font-medium text-foreground/80 transition-colors hover:text-foreground">Contact</Link>
-                <Link href="#" className="text-sm font-medium text-foreground/80 transition-colors hover:text-foreground">Log In</Link>
-                <Link href="#" className="text-sm font-medium text-foreground/80 transition-colors hover:text-foreground">Register</Link>
-            </div>
-            <Button variant="ghost" size="icon" aria-label="Search">
-              <Search className="h-5 w-5" />
-            </Button>
-            <Button variant="ghost" size="icon" aria-label="Shopping Cart">
-              <ShoppingCart className="h-5 w-5" />
-            </Button>
-            
-            <div className="md:hidden">
-                <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
-                    <SheetTrigger asChild>
-                        <Button variant="ghost" size="icon" aria-label="Open menu">
-                            <Menu className="h-6 w-6" />
-                        </Button>
-                    </SheetTrigger>
-                    <SheetContent side="right" className="bg-background p-0 w-[80%] sm:w-auto">
-                        <div className="flex flex-col h-full">
-                            <div className="flex items-center justify-between p-4 border-b border-border">
-                                <Link href="https://system76.com/" className="flex items-center gap-2" onClick={() => setMobileMenuOpen(false)}>
-                                    <System76Logo className="h-8 w-auto text-foreground" />
-                                </Link>
-                                <Button variant="ghost" size="icon" onClick={() => setMobileMenuOpen(false)} aria-label="Close menu">
-                                    <X className="h-6 w-6" />
-                                </Button>
-                            </div>
-                            <nav className="flex flex-col gap-6 p-6 text-lg">
-                                {navLinks.map((link) => (
-                                    <Link key={link.label} href={link.href} onClick={() => setMobileMenuOpen(false)} className="font-medium uppercase tracking-wider text-foreground/80 transition-colors hover:text-foreground">
-                                        {link.label}
-                                    </Link>
-                                ))}
-                                <hr className="border-border" />
-                                <Link href="#" onClick={() => setMobileMenuOpen(false)} className="font-medium text-foreground/80 transition-colors hover:text-foreground">Contact</Link>
-                                <Link href="#" onClick={() => setMobileMenuOpen(false)} className="font-medium text-foreground/80 transition-colors hover:text-foreground">Log In</Link>
-                                <Link href="#" onClick={() => setMobileMenuOpen(false)} className="font-medium text-foreground/80 transition-colors hover:text-foreground">Register</Link>
-                            </nav>
-                        </div>
-                    </SheetContent>
-                </Sheet>
-            </div>
-          </div>
+        <div className="flex justify-end items-center h-8 gap-4 text-xs">
+          {topNavLinks.map((link) => (
+            <Link
+              key={link.label}
+              href={link.href}
+              className="uppercase font-medium tracking-wider hover:text-foreground"
+            >
+              {link.label}
+            </Link>
+          ))}
         </div>
+        <div className="flex flex-col items-center justify-center py-6">
+          <Link href="https://system76.com/" className="flex flex-col items-center gap-2" aria-label="System76 Homepage">
+            <System76Logo className="h-10 w-auto text-foreground" />
+            <p className="text-sm tracking-wide">Powerful Linux Computers</p>
+          </Link>
+        </div>
+        <nav className="flex items-center justify-center gap-6 text-sm pb-4">
+          {mainNavLinks.map((link) => (
+            <Link
+              key={link.label}
+              href={link.href}
+              className="uppercase font-medium tracking-wider hover:text-foreground"
+            >
+              {link.label}
+            </Link>
+          ))}
+        </nav>
       </div>
     </header>
   );
