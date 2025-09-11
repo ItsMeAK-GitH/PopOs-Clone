@@ -1,9 +1,8 @@
-import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 
 export function HeroSection() {
   return (
-    <section className="relative w-full bg-cover bg-[left_center] bg-no-repeat" style={{ backgroundImage: "url('/pop-hero-xl-night.jpg')" }}>
+    <section className="relative w-full bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/pop-hero-xl-night.jpg')" }}>
       <div className="relative container mx-auto px-4 h-[40vh] min-h-[350px] md:h-[50vh] lg:h-[60vh] flex items-center">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="text-white text-left">
