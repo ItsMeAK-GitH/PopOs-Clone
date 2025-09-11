@@ -15,37 +15,37 @@ export function MeetPopOsSection() {
         <h2 className="font-headline text-3xl font-bold text-foreground tracking-widest">
           MEET POP!_OS
         </h2>
-        <div className="mt-8 max-w-4xl mx-auto">
-          <Dialog open={isOpen} onOpenChange={setIsOpen}>
-            <DialogTrigger asChild>
-              <div className="relative group cursor-pointer aspect-video">
-                <Image
-                  src={`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`}
-                  alt="Pop!_OS Video Thumbnail"
-                  layout="fill"
-                  objectFit="cover"
-                  className="rounded-lg shadow-xl"
-                  data-ai-hint="operating system interface"
-                />
-                <div className="absolute inset-0 bg-black/30 group-hover:bg-black/50 transition-colors rounded-lg flex items-center justify-center">
-                  <PlayCircle className="h-20 w-20 text-white/80 group-hover:text-white transition-colors" />
-                </div>
+      </div>
+      <div className="mt-8">
+        <Dialog open={isOpen} onOpenChange={setIsOpen}>
+          <DialogTrigger asChild>
+            <div className="relative group cursor-pointer aspect-video">
+              <Image
+                src={`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`}
+                alt="Pop!_OS Video Thumbnail"
+                layout="fill"
+                objectFit="cover"
+                className="shadow-xl"
+                data-ai-hint="operating system interface"
+              />
+              <div className="absolute inset-0 bg-black/30 group-hover:bg-black/50 transition-colors flex items-center justify-center">
+                <PlayCircle className="h-20 w-20 text-white/80 group-hover:text-white transition-colors" />
               </div>
-            </DialogTrigger>
-            <DialogContent className="max-w-4xl p-0 border-0">
-              <div className="aspect-video">
-                <iframe
-                  className="w-full h-full rounded-lg"
-                  src={`https://www.youtube.com/embed/${videoId}?autoplay=1`}
-                  title="YouTube video player"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                ></iframe>
-              </div>
-            </DialogContent>
-          </Dialog>
-        </div>
+            </div>
+          </DialogTrigger>
+          <DialogContent className="max-w-4xl p-0 border-0">
+            <div className="aspect-video">
+              <iframe
+                className="w-full h-full"
+                src={`https://www.youtube.com/embed/${videoId}?autoplay=1`}
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </DialogContent>
+        </Dialog>
       </div>
     </section>
   );
