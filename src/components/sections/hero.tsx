@@ -36,7 +36,7 @@ export function HeroSection() {
             src="/pop-hero-xl-night.jpg"
             alt="Rocket ship"
             fill
-            className="object-contain"
+            className="object-cover"
             data-ai-hint="rocket ship"
           />
         </div>
