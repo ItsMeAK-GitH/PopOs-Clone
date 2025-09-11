@@ -3,22 +3,11 @@ import { Button } from '@/components/ui/button';
 
 export function HeroSection() {
   return (
-    <section className="relative w-full">
-      <div className="absolute inset-0">
-        <Image
-          src="/pop-hero-xl-night.jpg"
-          alt="Pop!_OS background"
-          layout="fill"
-          objectFit="cover"
-          className="w-full h-full"
-          data-ai-hint="space stars"
-          priority
-        />
-      </div>
+    <section className="relative w-full bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/pop-hero-xl-night.jpg')" }}>
       <div className="relative container mx-auto px-4 h-[50vh] min-h-[400px] md:h-[60vh] lg:h-[70vh] flex items-center">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="text-white text-left">
-            <h1 className="text-5xl md:text-7xl font-bold font-headline tracking-wide">
+            <h1 className="text-5xl md:text-7xl font-bold font-headline tracking-wide whitespace-nowrap">
               Welcome to Pop!_OS
             </h1>
             <p className="mt-4 text-lg md:text-xl max-w-xl">
