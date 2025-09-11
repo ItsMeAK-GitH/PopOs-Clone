@@ -44,7 +44,7 @@ export function Header() {
             <img
               src="/system76-logo-open-source-tagliner4_1730474034__00841.webp"
               alt="System76 Logo"
-              className="h-10 w-auto"
+              className="h-16 w-auto"
             />
           </Link>
         </div>
