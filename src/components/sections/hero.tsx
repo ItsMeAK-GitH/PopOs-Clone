@@ -14,7 +14,7 @@ export function HeroSection() {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
       </div>
-      <div className="container mx-auto px-4 pt-16 pb-24 grid md:grid-cols-2 gap-8 items-center">
+      <div className="container mx-auto px-4 pt-32 pb-48 grid md:grid-cols-2 gap-8 items-center">
         <div className="text-center md:text-left">
           <h1 className="font-headline text-5xl font-bold text-white md:text-6xl lg:text-7xl">
             Welcome to Pop!_OS
