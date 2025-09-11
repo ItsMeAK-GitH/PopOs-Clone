@@ -31,7 +31,7 @@ export function HeroSection() {
             </Button>
           </div>
         </div>
-        <div className="relative h-64 md:h-full min-h-[300px]">
+        <div className="relative h-96 md:h-[500px]">
           <Image
             src="/pop-hero-xl-night.jpg"
             alt="Rocket ship"
