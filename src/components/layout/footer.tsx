@@ -59,7 +59,7 @@ export function Footer() {
 
           <div className="text-center">
             <p className="mb-4">
-              Subscribe for updates on products, OS features, and promotions.
+              Subscribe for updates on products, <br /> OS features, and promotions.
             </p>
             <Button className="bg-[#17a8a0] hover:bg-[#17a8a0]/90 text-white font-bold py-2 px-6 mb-6 w-full md:w-auto">
               SUBSCRIBE
