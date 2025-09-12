@@ -41,7 +41,7 @@ export function Header() {
         </div>
       </div>
       <div className="container mx-auto px-4">
-        <div className="flex flex-col items-center justify-center py-6">
+        <div className="flex flex-col items-center justify-center py-4">
           <Link href="https://system76.com/" className="flex flex-col items-center gap-2" aria-label="System76 Homepage">
             <img
               src="/system76-logo-open-source-tagliner4_1730474034__00841.webp"
