@@ -7,6 +7,7 @@ import { CompatibilitySection } from '@/components/sections/compatibility';
 import { SecuritySection } from '@/components/sections/security';
 import { CustomizationSection } from '@/components/sections/customization';
 import { OtherFeaturesSection } from '@/components/sections/other-features';
+import { HardwareSection } from '@/components/sections/hardware';
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
         <SecuritySection />
         <CustomizationSection />
         <OtherFeaturesSection />
+        <HardwareSection />
       </main>
     </div>
   );
