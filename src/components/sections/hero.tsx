@@ -13,10 +13,10 @@ export function HeroSection() {
               Unleash your potential on Pop!_OS: an operating system for STEM and creative professionals.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
-              <Button size="lg" className="bg-[#17a8a0] hover:bg-[#17a8a0]/90 text-white font-bold text-lg px-8 py-6">
+              <Button size="lg" className="bg-[#17a8a0] hover:bg-[#17a8a0]/90 text-white font-bold text-lg px-8 py-6 font-headline">
                 DOWNLOAD
               </Button>
-              <Button size="lg" className="bg-[#f3a41a] hover:bg-[#f3a41a]/90 text-black font-bold text-lg px-8 py-6">
+              <Button size="lg" className="bg-[#f3a41a] hover:bg-[#f3a41a]/90 text-black font-bold text-lg px-8 py-6 font-headline">
                 DONATE TO POP
               </Button>
             </div>
