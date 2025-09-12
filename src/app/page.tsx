@@ -10,6 +10,7 @@ import { CustomizationSection } from '@/components/sections/customization';
 import { OtherFeaturesSection } from '@/components/sections/other-features';
 import { HardwareSection } from '@/components/sections/hardware';
 import { TestimonialsSection } from '@/components/sections/testimonials';
+import { UnleashPotentialSection } from '@/components/sections/unleash-potential';
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
         <HardwareSection />
         <TestimonialsSection />
         <AboutSystem76Section />
+        <UnleashPotentialSection />
       </main>
     </div>
   );
