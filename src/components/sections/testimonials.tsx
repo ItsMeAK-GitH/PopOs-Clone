@@ -12,24 +12,24 @@ import type { CarouselApi } from "@/components/ui/carousel";
 
 const testimonials = [
   {
-    name: "Robert T.",
+    name: "Robert H.",
     quote:
-      "With minimal fiddling, Pop!_OS is a very capable, functional, and beautiful Linux distribution. It is still fully tweakable, but out of the box it just works. Really well!",
+      "When I first got my System76 laptop I decided I'd use Pop!_OS until it annoyed me, and would then switch to my distro-of-choice. Two years later not only am I still using it, it's become my distro-of-choice. It's radically cut how much time I spend hand-hacking configuration files, which gives me more time to spend on my projects.",
   },
   {
-    name: "Jane D.",
+    name: "Robert H.",
     quote:
-      "The workflow is just incredible. Auto-tiling, keyboard shortcuts, and the launcher make me so much more productive. I can't imagine going back to another OS.",
+      "When I first got my System76 laptop I decided I'd use Pop!_OS until it annoyed me, and would then switch to my distro-of-choice. Two years later not only am I still using it, it's become my distro-of-choice. It's radically cut how much time I spend hand-hacking configuration files, which gives me more time to spend on my projects.",
   },
   {
-    name: "Alex P.",
+    name: "Robert H.",
     quote:
-      "As a developer, having a Linux-based OS that just works out of the box with all my tools is a dream come true. Pop!_OS is that dream.",
+      "When I first got my System76 laptop I decided I'd use Pop!_OS until it annoyed me, and would then switch to my distro-of-choice. Two years later not only am I still using it, it's become my distro-of-choice. It's radically cut how much time I spend hand-hacking configuration files, which gives me more time to spend on my projects.",
   },
   {
-    name: "Samira K.",
+    name: "Robert H.",
     quote:
-      "I love how customizable everything is. I've been able to tweak the desktop to be exactly what I want. It feels truly personal.",
+      "When I first got my System76 laptop I decided I'd use Pop!_OS until it annoyed me, and would then switch to my distro-of-choice. Two years later not only am I still using it, it's become my distro-of-choice. It's radically cut how much time I spend hand-hacking configuration files, which gives me more time to spend on my projects.",
   },
 ];
 
@@ -53,14 +53,14 @@ export function TestimonialsSection() {
 
   return (
     <section className="py-20 bg-background">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto">
         <div className="text-center mb-12">
           <h2 className="font-body text-4xl font-normal text-foreground tracking-widest">
             TESTIMONIALS
           </h2>
         </div>
         <div
-          className="relative rounded-lg bg-cover bg-center py-24 px-4"
+          className="relative bg-cover bg-center py-24"
           style={{ backgroundImage: "url('/pop-testimonialr.jpg')" }}
         >
           <Carousel setApi={setApi} className="w-full max-w-2xl mx-auto">
@@ -68,7 +68,7 @@ export function TestimonialsSection() {
               {testimonials.map((testimonial, index) => (
                 <CarouselItem key={index}>
                   <div className="p-4">
-                    <div className="bg-[#0f2d4e]/80 text-white p-12 rounded-lg text-center">
+                    <div className="bg-[#0f2d4e]/80 text-white p-12 text-center">
                       <h3 className="text-3xl font-headline mb-4">
                         {testimonial.name}
                       </h3>
@@ -80,8 +80,8 @@ export function TestimonialsSection() {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="absolute left-[-50px] top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-black border-none h-16 w-16" />
-            <CarouselNext className="absolute right-[-50px] top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-black border-none h-16 w-16" />
+            <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-black border-none h-16 w-16" />
+            <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-black border-none h-16 w-16" />
           </Carousel>
           <div className="flex justify-center gap-2 mt-8">
             {Array.from({ length: count }).map((_, i) => (
