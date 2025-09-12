@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import { PlayCircle } from 'lucide-react';
-import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
+import { Dialog, DialogContent, DialogTrigger, DialogTitle, DialogDescription } from '@/components/ui/dialog';
 
 export function MeetPopOsSection() {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,6 +33,8 @@ export function MeetPopOsSection() {
               </div>
             </DialogTrigger>
             <DialogContent className="max-w-4xl p-0 border-0">
+              <DialogTitle className="sr-only">Meet Pop!_OS Video</DialogTitle>
+              <DialogDescription className="sr-only">An embedded YouTube video about Pop!_OS.</DialogDescription>
               <div className="aspect-video">
                 <iframe
                   className="w-full h-full"
