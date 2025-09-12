@@ -5,7 +5,7 @@ export function HeroSection() {
     <section className="relative w-full bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/pop-hero-xl-night.jpg')" }}>
       <div className="relative container mx-auto px-4 h-[40vh] min-h-[350px] md:h-[50vh] lg:h-[60vh] flex items-center">
         <div className="grid grid-cols-1 md:grid-cols-5 gap-8 items-center">
-          <div className="text-white text-left md:col-span-2 md:col-start-2">
+          <div className="text-white text-left md:col-span-3">
             <h1 className="text-5xl md:text-7xl font-bold font-headline tracking-wide whitespace-nowrap">
               Welcome to Pop!_OS
             </h1>
