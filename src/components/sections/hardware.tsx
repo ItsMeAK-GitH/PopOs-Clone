@@ -63,7 +63,7 @@ export function HardwareSection() {
             </div>
           ))}
         </div>
-        <div className="mt-8 flex justify-center">
+        <div className="mt-8 flex justify-start">
           <div className="grid grid-cols-1 md:w-1/3">
             {hardwareItems.slice(3).map((item) => (
                 <div key={item.title} className="bg-white/60 p-8 rounded-lg text-center flex flex-col items-center">
