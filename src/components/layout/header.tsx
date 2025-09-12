@@ -27,7 +27,7 @@ const mainNavLinks = [
 export function Header() {
   return (
     <header className="bg-background text-foreground/80 border-b border-border/50">
-      <div className="flex justify-end items-center h-8 text-base font-headline px-4">
+      <div className="flex justify-end items-center h-8 text-base pr-6 mt-2">
         <div className="flex gap-4">
           {topNavLinks.map((link) => (
             <Link
