@@ -59,16 +59,16 @@ export function TestimonialsSection() {
             TESTIMONIALS
           </h2>
         </div>
-        <div
-          className="relative bg-cover bg-center py-24"
-          style={{ backgroundImage: "url('/pop-testimonialr.jpg')" }}
-        >
-          <Carousel setApi={setApi} className="w-full max-w-2xl mx-auto">
+        <div className="relative">
+          <Carousel setApi={setApi} className="w-full max-w-4xl mx-auto">
             <CarouselContent>
               {testimonials.map((testimonial, index) => (
                 <CarouselItem key={index}>
-                  <div className="p-4">
-                    <div className="bg-[#0f2d4e]/80 text-white p-12 text-center">
+                  <div
+                    className="relative bg-cover bg-center py-24"
+                    style={{ backgroundImage: "url('/pop-testimonialr.jpg')" }}
+                  >
+                    <div className="bg-[#0f2d4e]/80 text-white p-12 text-center max-w-2xl mx-auto">
                       <h3 className="text-3xl font-headline mb-4">
                         {testimonial.name}
                       </h3>
@@ -80,8 +80,8 @@ export function TestimonialsSection() {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-black border-none h-16 w-16" />
-            <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-black border-none h-16 w-16" />
+            <CarouselPrevious className="absolute left-8 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-black border-none h-16 w-16" />
+            <CarouselNext className="absolute right-8 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-black border-none h-16 w-16" />
           </Carousel>
           <div className="flex justify-center gap-2 mt-8">
             {Array.from({ length: count }).map((_, i) => (
@@ -89,7 +89,7 @@ export function TestimonialsSection() {
                 key={i}
                 onClick={() => api?.scrollTo(i)}
                 className={`h-3 w-3 rounded-full ${
-                  current === i + 1 ? "bg-white" : "bg-white/50"
+                  current === i + 1 ? "bg-primary" : "bg-primary/50"
                 } transition-colors`}
                 aria-label={`Go to slide ${i + 1}`}
               ></button>
