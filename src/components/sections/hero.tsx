@@ -9,7 +9,7 @@ export function HeroSection() {
             <h1 className="text-5xl md:text-7xl font-bold font-headline tracking-wide whitespace-nowrap">
               Welcome to Pop!_OS
             </h1>
-            <p className="mt-4 text-lg md:text-xl max-w-xl">
+            <p className="mt-4 font-headline text-lg font-light max-w-xl">
               Unleash your potential on Pop!_OS: an operating system for STEM and creative professionals.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
