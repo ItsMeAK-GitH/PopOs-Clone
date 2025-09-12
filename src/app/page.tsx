@@ -8,6 +8,7 @@ import { SecuritySection } from '@/components/sections/security';
 import { CustomizationSection } from '@/components/sections/customization';
 import { OtherFeaturesSection } from '@/components/sections/other-features';
 import { HardwareSection } from '@/components/sections/hardware';
+import { TestimonialsSection } from '@/components/sections/testimonials';
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         <CustomizationSection />
         <OtherFeaturesSection />
         <HardwareSection />
+        <TestimonialsSection />
       </main>
     </div>
   );
