@@ -11,6 +11,7 @@ import { OtherFeaturesSection } from '@/components/sections/other-features';
 import { HardwareSection } from '@/components/sections/hardware';
 import { TestimonialsSection } from '@/components/sections/testimonials';
 import { UnleashPotentialSection } from '@/components/sections/unleash-potential';
+import { Footer } from '@/components/layout/footer';
 
 export default function Home() {
   return (
@@ -30,6 +31,7 @@ export default function Home() {
         <AboutSystem76Section />
         <UnleashPotentialSection />
       </main>
+      <Footer />
     </div>
   );
 }
