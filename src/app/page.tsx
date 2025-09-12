@@ -17,7 +17,6 @@ export default function Home() {
       <Header />
       <main>
         <HeroSection />
-        <AboutSystem76Section />
         <EvolvingSection />
         <MeetPopOsSection />
         <WhyPopOsSection />
@@ -27,6 +26,7 @@ export default function Home() {
         <OtherFeaturesSection />
         <HardwareSection />
         <TestimonialsSection />
+        <AboutSystem76Section />
       </main>
     </div>
   );
