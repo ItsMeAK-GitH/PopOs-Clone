@@ -12,7 +12,7 @@ export function MeetPopOsSection() {
   return (
     <section className="py-20 bg-background px-4">
       <div className="mx-auto text-center">
-        <h2 className="font-headline text-3xl font-bold text-foreground tracking-widest">
+        <h2 className="font-body text-3xl font-bold text-foreground tracking-widest">
           MEET POP!_OS
         </h2>
         <div className="mt-8">
