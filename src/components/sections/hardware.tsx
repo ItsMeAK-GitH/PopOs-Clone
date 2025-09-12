@@ -23,6 +23,13 @@ const hardwareItems = [
     imageHint: 'workstation computer',
     link: '#',
   },
+  {
+    title: 'Keyboards',
+    description: 'Handcrafted mechanical keyboards designed by keyboard enthusiasts for typing at warp speed.',
+    imageSrc: '/detail-keyboard.jpg',
+    imageHint: 'mechanical keyboard',
+    link: '#',
+  },
 ];
 
 export function HardwareSection() {
@@ -35,7 +42,7 @@ export function HardwareSection() {
             HARDWARE MADE FOR POP!_OS
           </h2>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {hardwareItems.map((item) => (
             <div key={item.title} className="bg-white/60 p-8 rounded-lg text-center flex flex-col items-center">
               <div className="mb-6">
