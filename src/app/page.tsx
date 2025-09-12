@@ -6,6 +6,7 @@ import { WhyPopOsSection } from '@/components/sections/why-pop-os';
 import { CompatibilitySection } from '@/components/sections/compatibility';
 import { SecuritySection } from '@/components/sections/security';
 import { CustomizationSection } from '@/components/sections/customization';
+import { OtherFeaturesSection } from '@/components/sections/other-features';
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <CompatibilitySection />
         <SecuritySection />
         <CustomizationSection />
+        <OtherFeaturesSection />
       </main>
     </div>
   );
