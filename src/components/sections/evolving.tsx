@@ -5,7 +5,7 @@ export function EvolvingSection() {
   return (
     <section className="bg-[#eaf3f5] py-20 text-center">
       <div className="container mx-auto px-4">
-        <h2 className="font-body text-3xl font-bold text-[#574f4a] tracking-widest">
+        <h2 className="font-body text-4xl font-normal text-[#574f4a] tracking-widest">
           POP!_OS IS EVOLVING
         </h2>
         <p className="mt-4 max-w-3xl mx-auto text-lg text-[#574f4a]/90">
