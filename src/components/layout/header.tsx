@@ -27,8 +27,8 @@ const mainNavLinks = [
 export function Header() {
   return (
     <header className="bg-background text-foreground/80 border-b border-border/50">
-      <div className="container mx-auto">
-        <div className="flex justify-end items-center h-8 gap-4 text-sm font-headline pr-4">
+      <div className="flex justify-end items-center h-8 text-sm font-headline px-4">
+        <div className="flex gap-4">
           {topNavLinks.map((link) => (
             <Link
               key={link.label}
@@ -39,29 +39,29 @@ export function Header() {
             </Link>
           ))}
         </div>
-        <div className="px-4">
-          <div className="flex flex-col items-center justify-center py-6">
-            <Link href="https://system76.com/" className="flex flex-col items-center gap-2" aria-label="System76 Homepage">
-              <img
-                src="/system76-logo-open-source-tagliner4_1730474034__00841.webp"
-                alt="System76 Logo"
-                style={{ height: '112px' }}
-                className="w-auto"
-              />
-            </Link>
-          </div>
-          <nav className="flex items-center justify-center gap-6 text-base pb-4 font-headline">
-            {mainNavLinks.map((link) => (
-              <Link
-                key={link.label}
-                href={link.href}
-                className="font-light tracking-wider hover:text-foreground"
-              >
-                {link.label}
-              </Link>
-            ))}
-          </nav>
+      </div>
+      <div className="container mx-auto px-4">
+        <div className="flex flex-col items-center justify-center py-6">
+          <Link href="https://system76.com/" className="flex flex-col items-center gap-2" aria-label="System76 Homepage">
+            <img
+              src="/system76-logo-open-source-tagliner4_1730474034__00841.webp"
+              alt="System76 Logo"
+              style={{ height: '112px' }}
+              className="w-auto"
+            />
+          </Link>
         </div>
+        <nav className="flex items-center justify-center gap-6 text-base pb-4 font-headline">
+          {mainNavLinks.map((link) => (
+            <Link
+              key={link.label}
+              href={link.href}
+              className="font-light tracking-wider hover:text-foreground"
+            >
+              {link.label}
+            </Link>
+          ))}
+        </nav>
       </div>
     </header>
   );
