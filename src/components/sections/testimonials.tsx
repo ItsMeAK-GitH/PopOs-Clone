@@ -12,19 +12,19 @@ import type { CarouselApi } from "@/components/ui/carousel";
 
 const testimonials = [
   {
-    name: "Robert H.",
+    name: "Stuart L.",
     quote:
-      "When I first got my System76 laptop I decided I'd use Pop!_OS until it annoyed me, and would then switch to my distro-of-choice. Two years later not only am I still using it, it's become my distro-of-choice. It's radically cut how much time I spend hand-hacking configuration files, which gives me more time to spend on my projects.",
+      "My favorite thing about Pop!_OS is that it literally gets out of your way and I can get so much work done without any problems. My favorite feature has to be the docker and the sweet animations!!!",
   },
   {
-    name: "Robert H.",
+    name: "Robert T.",
     quote:
-      "When I first got my System76 laptop I decided I'd use Pop!_OS until it annoyed me, and would then switch to my distro-of-choice. Two years later not only am I still using it, it's become my distro-of-choice. It's radically cut how much time I spend hand-hacking configuration files, which gives me more time to spend on my projects.",
+      "With minimal fiddling, Pop!_OS is a very capable, functional, and beautiful Linux distribution. It is still fully tweakable, but out of the box it just works. Really well!",
   },
   {
-    name: "Robert H.",
+    name: "Amanda T.",
     quote:
-      "When I first got my System76 laptop I decided I'd use Pop!_OS until it annoyed me, and would then switch to my distro-of-choice. Two years later not only am I still using it, it's become my distro-of-choice. It's radically cut how much time I spend hand-hacking configuration files, which gives me more time to spend on my projects.",
+      "l am a high school science teacher, and while I do consider myself tech-savvy, I am not one to explore or experiment with different operating systems. I have been using Pop!_OS for several months now and I love it. It is very intuitive and user-friendly for the non-Linux user. Every tool I have needed has been available in the Pop Shop and those tools are easy to download, install, and use. Thank you for creating a Linux OS that is simple and approachable.",
   },
   {
     name: "Robert H.",
