@@ -58,16 +58,16 @@ export function TestimonialsSection() {
           TESTIMONIALS
         </h2>
       </div>
-      <div className="relative">
-        <Carousel setApi={setApi} className="w-full">
-          <CarouselContent>
-            {testimonials.map((testimonial, index) => (
-              <CarouselItem key={index}>
-                <div
-                  className="relative bg-cover bg-center"
-                  style={{ backgroundImage: "url('/pop-testimonialr.jpg')" }}
-                >
-                  <div className="py-24">
+      <Carousel setApi={setApi} className="w-full">
+        <CarouselContent>
+          {testimonials.map((testimonial, index) => (
+            <CarouselItem key={index}>
+              <div
+                className="relative bg-cover bg-center"
+                style={{ backgroundImage: "url('/pop-testimonialr.jpg')" }}
+              >
+                <div className="py-24">
+                  <div className="container mx-auto px-4">
                     <div className="bg-[#0f2d4e]/80 text-white p-12 text-center max-w-2xl mx-auto">
                       <h3 className="text-3xl font-headline mb-4">
                         {testimonial.name}
@@ -78,24 +78,24 @@ export function TestimonialsSection() {
                     </div>
                   </div>
                 </div>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselPrevious className="absolute left-8 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-black border-none h-16 w-16" />
-          <CarouselNext className="absolute right-8 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-black border-none h-16 w-16" />
-        </Carousel>
-        <div className="flex justify-center gap-2 mt-8">
-          {Array.from({ length: count }).map((_, i) => (
-            <button
-              key={i}
-              onClick={() => api?.scrollTo(i)}
-              className={`h-3 w-3 rounded-full ${
-                current === i + 1 ? "bg-primary" : "bg-primary/50"
-              } transition-colors`}
-              aria-label={`Go to slide ${i + 1}`}
-            ></button>
+              </div>
+            </CarouselItem>
           ))}
-        </div>
+        </CarouselContent>
+        <CarouselPrevious className="absolute left-8 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-black border-none h-16 w-16" />
+        <CarouselNext className="absolute right-8 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-black border-none h-16 w-16" />
+      </Carousel>
+      <div className="flex justify-center gap-2 mt-8">
+        {Array.from({ length: count }).map((_, i) => (
+          <button
+            key={i}
+            onClick={() => api?.scrollTo(i)}
+            className={`h-3 w-3 rounded-full ${
+              current === i + 1 ? "bg-primary" : "bg-primary/50"
+            } transition-colors`}
+            aria-label={`Go to slide ${i + 1}`}
+          ></button>
+        ))}
       </div>
     </section>
   );
