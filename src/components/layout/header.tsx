@@ -28,7 +28,7 @@ export function Header() {
   return (
     <header className="bg-background text-foreground/80 border-b border-border/50">
       <div className="container mx-auto px-4">
-        <div className="flex justify-end items-center h-8 gap-4 text-xs">
+        <div className="flex justify-end items-center h-8 gap-4 text-xs font-headline">
           {topNavLinks.map((link) => (
             <Link
               key={link.label}
@@ -49,7 +49,7 @@ export function Header() {
             />
           </Link>
         </div>
-        <nav className="flex items-center justify-center gap-6 text-sm pb-4">
+        <nav className="flex items-center justify-center gap-6 text-sm pb-4 font-headline">
           {mainNavLinks.map((link) => (
             <Link
               key={link.label}
