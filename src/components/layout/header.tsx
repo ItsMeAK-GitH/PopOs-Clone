@@ -33,7 +33,7 @@ export function Header() {
             <Link
               key={link.label}
               href={link.href}
-              className="font-light tracking-wider hover:text-foreground"
+              className="font-bold tracking-wider hover:text-foreground"
             >
               {link.label}
             </Link>
