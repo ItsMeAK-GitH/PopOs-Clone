@@ -17,12 +17,12 @@ const footerLinksCol2 = [
 ];
 
 const socialLinks = [
-  { href: '#', icon: <Rss className="h-6 w-6" /> },
-  { href: '#', icon: <Linkedin className="h-6 w-6" /> },
-  { href: '#', icon: <Github className="h-6 w-6" /> },
-  { href: '#', icon: <Youtube className="h-6 w-6" /> },
-  { href: '#', icon: <Instagram className="h-6 w-6" /> },
-  { href: '#', icon: <X className="h-6 w-6" /> },
+  { href: '#', icon: <Rss className="h-7 w-7" /> },
+  { href: '#', icon: <Linkedin className="h-7 w-7" /> },
+  { href: '#', icon: <Github className="h-7 w-7" /> },
+  { href: '#', icon: <Youtube className="h-7 w-7" /> },
+  { href: '#', icon: <Instagram className="h-7 w-7" /> },
+  { href: '#', icon: <X className="h-7 w-7" /> },
 ];
 
 export function Footer() {
@@ -57,14 +57,14 @@ export function Footer() {
 
           <div>{/* Empty column for spacing */}</div>
 
-          <div className="text-left md:text-right">
+          <div className="text-center">
             <p className="mb-4">
               Subscribe for updates on products, OS features, and promotions.
             </p>
             <Button className="bg-[#17a8a0] hover:bg-[#17a8a0]/90 text-white font-bold py-2 px-6 mb-6 w-full md:w-auto">
               SUBSCRIBE
             </Button>
-            <div className="flex gap-4 justify-start md:justify-end">
+            <div className="flex gap-4 justify-center">
               {socialLinks.map((link, index) => (
                 <Link key={index} href={link.href} className="hover:text-white">
                   {link.icon}
