@@ -17,17 +17,17 @@ const testimonials = [
       "With minimal fiddling, Pop!_OS is a very capable, functional, and beautiful Linux distribution. It is still fully tweakable, but out of the box it just works. Really well!",
   },
   {
-    name: "Jane D",
+    name: "Jane D.",
     quote:
       "The workflow is just incredible. Auto-tiling, keyboard shortcuts, and the launcher make me so much more productive. I can't imagine going back to another OS.",
   },
   {
-    name: "Alex P",
+    name: "Alex P.",
     quote:
       "As a developer, having a Linux-based OS that just works out of the box with all my tools is a dream come true. Pop!_OS is that dream.",
   },
   {
-    name: "Samira K",
+    name: "Samira K.",
     quote:
       "I love how customizable everything is. I've been able to tweak the desktop to be exactly what I want. It feels truly personal.",
   },
