@@ -64,16 +64,18 @@ export function TestimonialsSection() {
             {testimonials.map((testimonial, index) => (
               <CarouselItem key={index}>
                 <div
-                  className="relative bg-cover bg-center py-24"
+                  className="relative bg-cover bg-center"
                   style={{ backgroundImage: "url('/pop-testimonialr.jpg')" }}
                 >
-                  <div className="bg-[#0f2d4e]/80 text-white p-12 text-center max-w-2xl mx-auto">
-                    <h3 className="text-3xl font-headline mb-4">
-                      {testimonial.name}
-                    </h3>
-                    <p className="text-lg font-body font-light leading-relaxed">
-                      &quot;{testimonial.quote}&quot;
-                    </p>
+                  <div className="py-24">
+                    <div className="bg-[#0f2d4e]/80 text-white p-12 text-center max-w-2xl mx-auto">
+                      <h3 className="text-3xl font-headline mb-4">
+                        {testimonial.name}
+                      </h3>
+                      <p className="text-lg font-body font-light leading-relaxed">
+                        &quot;{testimonial.quote}&quot;
+                      </p>
+                    </div>
                   </div>
                 </div>
               </CarouselItem>
