@@ -18,7 +18,7 @@ export function CompatibilitySection() {
             />
           </div>
           <div>
-            <h3 className="text-4xl font-headline font-light text-foreground/80">Compatibility</h3>
+            <h3 className="text-4xl font-headline font-normal text-foreground/80">Compatibility</h3>
             <p className="mt-4 text-lg text-foreground/70 leading-relaxed">
               Develop software out of the box with a vast array of libraries and tools at your disposal. Pop!_OS uses APT and Flatpak package management, meaning it&apos;s easy to install, remove, and update all software on the OS.
             </p>

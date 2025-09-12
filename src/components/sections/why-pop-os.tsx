@@ -14,7 +14,7 @@ export function WhyPopOsSection() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           <div>
-            <h3 className="text-4xl font-headline font-light text-foreground/80">Workflow</h3>
+            <h3 className="text-4xl font-headline font-normal text-foreground/80">Workflow</h3>
             <p className="mt-4 text-lg text-foreground/70 leading-relaxed">
               Pop!_OS is designed for fast navigation, easy workspace organization, and fluid, convenient workflow. Your operating system should encourage discovery, not obstruct it.
             </p>
