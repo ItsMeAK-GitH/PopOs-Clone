@@ -3,6 +3,7 @@ import { HeroSection } from '@/components/sections/hero';
 import { EvolvingSection } from '@/components/sections/evolving';
 import { MeetPopOsSection } from '@/components/sections/meet-pop-os';
 import { WhyPopOsSection } from '@/components/sections/why-pop-os';
+import { CompatibilitySection } from '@/components/sections/compatibility';
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <EvolvingSection />
         <MeetPopOsSection />
         <WhyPopOsSection />
+        <CompatibilitySection />
       </main>
     </div>
   );
