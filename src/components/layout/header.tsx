@@ -17,7 +17,6 @@ const mainNavLinks = [
   { href: '#', label: 'workstations' },
   { href: '#', label: 'mini' },
   { href: '#', label: 'servers' },
-  { href: '#', label: 'keyboards' },
   { href: '#', label: 'components' },
   { href: '#', label: 'pop!_os' },
   { href: '#', label: 'merch' },
