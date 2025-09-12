@@ -12,9 +12,9 @@ import type { CarouselApi } from "@/components/ui/carousel";
 
 const testimonials = [
   {
-    name: "Stuart L",
+    name: "Robert T.",
     quote:
-      "My favorite thing about Pop!_OS is that it literally gets out of your way and I can get so much work done without any problems. My favorite feature has to be the docker and the sweet animations!!!",
+      "With minimal fiddling, Pop!_OS is a very capable, functional, and beautiful Linux distribution. It is still fully tweakable, but out of the box it just works. Really well!",
   },
   {
     name: "Jane D",
@@ -68,7 +68,7 @@ export function TestimonialsSection() {
               {testimonials.map((testimonial, index) => (
                 <CarouselItem key={index}>
                   <div className="p-4">
-                    <div className="bg-black/20 text-white p-12 rounded-lg text-center">
+                    <div className="bg-[#0f2d4e]/80 text-white p-12 rounded-lg text-center">
                       <h3 className="text-3xl font-headline mb-4">
                         {testimonial.name}
                       </h3>
