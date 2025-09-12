@@ -33,7 +33,7 @@ export function Header() {
             <Link
               key={link.label}
               href={link.href}
-              className="font-normal tracking-wider hover:text-foreground"
+              className="font-light tracking-wider hover:text-foreground"
             >
               {link.label}
             </Link>
@@ -44,7 +44,7 @@ export function Header() {
             <img
               src="/system76-logo-open-source-tagliner4_1730474034__00841.webp"
               alt="System76 Logo"
-              style={{ height: '128px' }}
+              style={{ height: '112px' }}
               className="w-auto"
             />
           </Link>
@@ -54,7 +54,7 @@ export function Header() {
             <Link
               key={link.label}
               href={link.href}
-              className="font-normal tracking-wider hover:text-foreground"
+              className="font-light tracking-wider hover:text-foreground"
             >
               {link.label}
             </Link>
