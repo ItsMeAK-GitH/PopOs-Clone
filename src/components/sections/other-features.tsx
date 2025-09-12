@@ -38,7 +38,7 @@ export function OtherFeaturesSection() {
                 alt={feature.title}
                 width={600}
                 height={400}
-                className="rounded-lg shadow-xl mb-6"
+                className="shadow-xl mb-6"
                 data-ai-hint={feature.imageHint}
               />
               <h3 className="text-3xl font-headline font-normal text-foreground/80 mb-2">{feature.title}</h3>
