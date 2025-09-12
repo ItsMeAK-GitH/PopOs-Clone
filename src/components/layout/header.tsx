@@ -16,6 +16,7 @@ const mainNavLinks = [
   { href: '#', 'label': 'desktops' },
   { href: '#', label: 'workstations' },
   { href: '#', label: 'mini' },
+  { href: '#', label: 'keyboards' },
   { href: '#', label: 'servers' },
   { href: '#', label: 'components' },
   { href: '#', label: 'pop!_os' },

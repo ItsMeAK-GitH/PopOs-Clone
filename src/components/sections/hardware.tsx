@@ -23,6 +23,13 @@ const hardwareItems = [
     imageHint: 'workstation computer',
     link: '#',
   },
+  {
+    title: 'Keyboards',
+    description: 'Ergonomic and mechanical keyboards for a superb typing experience.',
+    imageSrc: '/detail-keyboard.jpg',
+    imageHint: 'computer keyboard',
+    link: '#',
+  },
 ];
 
 export function HardwareSection() {
@@ -36,7 +43,7 @@ export function HardwareSection() {
           </h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {hardwareItems.map((item) => (
+          {hardwareItems.slice(0, 3).map((item) => (
             <div key={item.title} className="bg-white/60 p-8 rounded-lg text-center flex flex-col items-center">
               <div className="mb-6">
                 <Image
@@ -55,6 +62,29 @@ export function HardwareSection() {
               </Button>
             </div>
           ))}
+        </div>
+        <div className="mt-8 flex justify-center">
+          <div className="grid grid-cols-1 md:w-1/3">
+            {hardwareItems.slice(3).map((item) => (
+                <div key={item.title} className="bg-white/60 p-8 rounded-lg text-center flex flex-col items-center">
+                  <div className="mb-6">
+                    <Image
+                      src={item.imageSrc}
+                      alt={item.title}
+                      width={250}
+                      height={250}
+                      className="rounded-full"
+                      data-ai-hint={item.imageHint}
+                    />
+                  </div>
+                  <h3 className="text-2xl font-headline font-normal text-foreground/80 mb-2">{item.title}</h3>
+                  <p className="text-base text-foreground/70 leading-relaxed mb-6 flex-grow">{item.description}</p>
+                  <Button size="lg" className="bg-[#f3a41a] hover:bg-[#f3a41a]/90 text-black font-normal text-sm px-8 py-5 mt-auto font-headline">
+                    SHOP NOW
+                  </Button>
+                </div>
+              ))}
+          </div>
         </div>
       </div>
     </section>
