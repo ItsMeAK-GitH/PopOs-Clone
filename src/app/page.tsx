@@ -1,5 +1,6 @@
 import { Header } from '@/components/layout/header';
 import { HeroSection } from '@/components/sections/hero';
+import { AboutSystem76Section } from '@/components/sections/about-system76';
 import { EvolvingSection } from '@/components/sections/evolving';
 import { MeetPopOsSection } from '@/components/sections/meet-pop-os';
 import { WhyPopOsSection } from '@/components/sections/why-pop-os';
@@ -16,6 +17,7 @@ export default function Home() {
       <Header />
       <main>
         <HeroSection />
+        <AboutSystem76Section />
         <EvolvingSection />
         <MeetPopOsSection />
         <WhyPopOsSection />
