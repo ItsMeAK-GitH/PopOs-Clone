@@ -17,12 +17,12 @@ const footerLinksCol2 = [
 ];
 
 const socialLinks = [
-  { href: '#', icon: <Rss className="h-7 w-7" /> },
-  { href: '#', icon: <Linkedin className="h-7 w-7" /> },
-  { href: '#', icon: <Github className="h-7 w-7" /> },
-  { href: '#', icon: <Youtube className="h-7 w-7" /> },
-  { href: '#', icon: <Instagram className="h-7 w-7" /> },
-  { href: '#', icon: <X className="h-7 w-7" /> },
+  { href: '#', icon: <Rss className="h-8 w-8" /> },
+  { href: '#', icon: <Linkedin className="h-8 w-8" /> },
+  { href: '#', icon: <Github className="h-8 w-8" /> },
+  { href: '#', icon: <Youtube className="h-8 w-8" /> },
+  { href: '#', icon: <Instagram className="h-8 w-8" /> },
+  { href: '#', icon: <X className="h-8 w-8" /> },
 ];
 
 export function Footer() {
@@ -64,7 +64,7 @@ export function Footer() {
             <Button className="bg-[#17a8a0] hover:bg-[#17a8a0]/90 text-white font-bold py-2 px-6 mb-6 w-full md:w-auto">
               SUBSCRIBE
             </Button>
-            <div className="flex gap-4 justify-center">
+            <div className="flex gap-6 justify-center">
               {socialLinks.map((link, index) => (
                 <Link key={index} href={link.href} className="hover:text-white">
                   {link.icon}
