@@ -24,10 +24,10 @@ PopOs-Clone/
 ├── public/
 ├── src/
 │   ├── components/
-│   ├── pages/
+│   ├── app/
 │   ├── hooks/
 │   ├── styles/
-│   └── index.tsx
+│   └── lib
 ├── tailwind.config.ts
 ├── tsconfig.json
 └── README.md
