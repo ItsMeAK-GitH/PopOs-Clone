@@ -7,6 +7,8 @@ A frontend-only clone of the [Pop!_OS Website](https://system76.com/pop/).
 
 Built as part of a 2nd year technical web development task to demonstrate HTML, CSS, and JavaScript skills. 
 
+---
+
 ## 🧰 Tech Stack
 
 > ⚛️ **Framework**: React + TypeScript  
@@ -14,6 +16,9 @@ Built as part of a 2nd year technical web development task to demonstrate HTML, 
 > 🔤 **Fonts & Assets**: Custom fonts, icons, and images inspired by Pop!_OS  
 > ☁️ **Deployment**: Vercel  
 
+---
+
+# 📂 Project Structure
 ```bash
 PopOs-Clone/
 ├── public/
@@ -27,6 +32,6 @@ PopOs-Clone/
 ├── tsconfig.json
 └── README.md
 ```
-
+---
 
 All trademarks, brand names, and official assets belong to System76 / Pop!_OS.
